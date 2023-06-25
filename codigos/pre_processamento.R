@@ -9,7 +9,7 @@ proporcao_ausentes <- valores_ausentes / nrow(df_final)
 print(proporcao_ausentes)
 
 #============================================================
-  
+
 
 # Criar os boxplots usando ggplot2
 boxplot_VELOCITY <- ggplot(df_final, aes(y = VELOCITY)) + geom_boxplot() + labs(title = "Boxplot - VELOCITY")

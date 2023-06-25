@@ -45,8 +45,7 @@ dicionario_regiao <- tribble(
   mutate(code = as.character(code))
 
 # ------------------------------------------------------------------------------
-
-diretorio_busdata <- "pp-tema2-main/Datasets"
+diretorio_busdata <- "~/Code/MAPMOB_Pluv/Datasets"
 arquivo_escolhido <- "G1-2021-12-12.parquet"
 
 df <- list.files(diretorio_busdata) %>%
@@ -68,8 +67,7 @@ df <- df %>%
   select(-c(name, arquivo))
 
 # ---
-
-pasta <- "~/pp-tema2-main/pluviometricos_tratados/"
+pasta <- "~/Code/MAPMOB_Pluv/pluviometricos_tratados/"
 
 # Lista de arquivos na pasta
 arquivos <- list.files(path = pasta, pattern = "*.csv", full.names = TRUE)
