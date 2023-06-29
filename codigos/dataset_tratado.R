@@ -1,3 +1,5 @@
+# install.packages("arrow")
+
 library(tidyverse)
 library(lubridate)
 library(arrow)
@@ -62,7 +64,7 @@ quantile <- df %>%
 quantile <- quantile(quantile$VELOCITY, probs = c(0, 0.25, 0.5, 0.75, 1))
 
 df <- df %>% 
-  filter(arquivo == arquivo_escolhido) %>%  # Filtra Arquivo
+  #filter(arquivo == arquivo_escolhido) %>%  # Filtra Arquivo
   drop_na(PLUVIOMETRICREG) %>% 
   select(-c(name, arquivo))
 
